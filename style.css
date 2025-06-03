@@ -3,10 +3,12 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(119, 72, 72);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .card{
     width: 500px;
