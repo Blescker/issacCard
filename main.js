@@ -1,8 +1,7 @@
-let boton = document.querySelector('.boton')
-let cardFooter = document.querySelector('.card-footer')
-boton.addEventListener('click',activar)
-
-function activar() {
-    cardFooter.classList.toggle('activo');
-}
-console.log('xd')
+document.querySelectorAll('.boton button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.closest('.card');
+        const footer = card.querySelector('.card-footer');
+        footer.classList.toggle('activo');
+    });
+});
